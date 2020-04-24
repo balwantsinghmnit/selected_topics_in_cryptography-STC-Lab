@@ -38,7 +38,7 @@ def prng():
     #set A as rightmost bit
     arr[5] = A
     #calculate decimal number from [1,63] using arr
-    return(decimal(arr)%63)
+    return(decimal(arr)%63+1)
 #generate first random number and store it to later check for repition
 out = open("output.txt","w")
 num = prng()
